@@ -1,0 +1,555 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "deep-blue": "#2C3993",
+        "vibrant-orange": "#F88229",
+        "charcoal": "#333333",
+        "heritage-red": "#901C3B"
+      },
+      "fontFamily": {
+        "sans": [
+          "Montserrat",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-[#F9F9F9]">
+    <!-- Header Section -->
+    <header id="header" class="w-full bg-[#2C3993] px-20 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="text-white text-2xl font-bold">
+                    <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Solutions For Professionals</span>
+                <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer font-medium">Products</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Technical Resources</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Our Work</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">About Us</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Contact Us</span>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <span class="text-white font-medium">1300 GGD DOORS</span>
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                    Trade Portal Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section id="breadcrumb" class="bg-white py-4 border-b border-gray-200">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="flex items-center space-x-2 text-sm">
+                <span class="text-[#F88229] hover:text-orange-600 cursor-pointer">Home</span>
+                <span class="text-[#333333]">/</span>
+                <span class="text-[#F88229] hover:text-orange-600 cursor-pointer">Products</span>
+                <span class="text-[#333333]">/</span>
+                <span class="text-[#333333]">Commercial Roller Doors</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Header -->
+    <section id="page-header" class="py-16 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl font-bold text-[#2C3993] mb-6">Commercial Roller Doors</h1>
+                <p class="text-xl text-[#333333]/80 leading-relaxed">
+                    Heavy-duty commercial roller doors engineered for demanding industrial and commercial applications. Built for durability, security, and operational efficiency with advanced automation options and customizable specifications to meet your project requirements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtering & Sorting Toolbar -->
+    <section id="filter-toolbar" class="bg-[#e1ecf8] py-6">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+                <div class="flex items-center space-x-6">
+                    <div class="flex items-center space-x-2">
+                        <label class="text-[#333333] font-medium">Material:</label>
+                        <select class="bg-white border border-gray-300 rounded px-4 py-2 text-[#333333] min-w-[140px]">
+                            <option>All Materials</option>
+                            <option>Steel</option>
+                            <option>Aluminum</option>
+                            <option>Composite</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2">
+                        <label class="text-[#333333] font-medium">Application:</label>
+                        <select class="bg-white border border-gray-300 rounded px-4 py-2 text-[#333333] min-w-[140px]">
+                            <option>All Applications</option>
+                            <option>Industrial</option>
+                            <option>Commercial</option>
+                            <option>Warehouse</option>
+                            <option>Retail</option>
+                        </select>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2">
+                        <label class="text-[#333333] font-medium">Size Range:</label>
+                        <select class="bg-white border border-gray-300 rounded px-4 py-2 text-[#333333] min-w-[140px]">
+                            <option>All Sizes</option>
+                            <option>Small (up to 3m)</option>
+                            <option>Medium (3-6m)</option>
+                            <option>Large (6m+)</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <span class="text-[#333333] text-sm">Showing 12 products</span>
+                    <div class="flex items-center space-x-2">
+                        <label class="text-[#333333] font-medium">Sort by:</label>
+                        <select class="bg-white border border-gray-300 rounded px-4 py-2 text-[#333333] min-w-[140px]">
+                            <option>Name A-Z</option>
+                            <option>Name Z-A</option>
+                            <option>Newest First</option>
+                            <option>Most Popular</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="product-grid" class="py-20 bg-[#F9F9F9]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div id="product-1" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/76ede3eb5e-da70045a6d29da75472e.png" alt="heavy duty industrial roller door, steel construction, commercial warehouse">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Industrial HD-2000 Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Heavy-duty steel construction with reinforced guides for high-frequency industrial applications. Available in sizes up to 8m wide.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Steel
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div id="product-2" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dde1771d61-887a6a8c843554f9d7a7.png" alt="commercial aluminum roller door, modern office building, lightweight construction">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Commercial AL-1500 Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Lightweight aluminum construction perfect for commercial applications requiring frequent operation and modern aesthetics.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Aluminum
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div id="product-3" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b7908a9c1-b11bff6ab45004578e4c.png" alt="automated roller door system, smart controls, commercial automation">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Smart Automation SA-3000</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Advanced automated roller door system with smart controls, remote monitoring, and integrated security features.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Composite
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div id="product-4" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f7acc3e657-246e46ee8841bafe9ea7.png" alt="fire rated roller door, safety compliance, commercial building">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Fire Rated FR-2400 Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Fire-rated roller doors meeting Australian building codes with certified performance and emergency operation systems.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Steel
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div id="product-5" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/180c8a9bbe-37df39fffbb4f89c6e6e.png" alt="insulated roller door, energy efficient, commercial thermal performance">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Insulated Thermal IT-1800</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            High-performance insulated doors for temperature-controlled environments with superior thermal efficiency ratings.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Composite
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div id="product-6" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5aceb97141-96d91fd9aca6a261508a.png" alt="high speed roller door, rapid operation, industrial efficiency">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">High Speed HS-4000 Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Ultra-fast operation doors designed for high-traffic industrial applications with self-repairing fabric technology.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Fabric
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div id="product-7" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4cf3a800b9-ab23de311e4281e780dc.png" alt="security roller door, anti-theft protection, commercial security">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Security Plus SP-2200</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Maximum security roller doors with anti-lift technology and reinforced locking systems for high-risk applications.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Steel
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div id="product-8" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c261880436-b20c515ee1a62d79c829.png" alt="wind rated roller door, cyclone protection, extreme weather resistance">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Wind Rated WR-3500 Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Engineered for extreme weather conditions with certified wind load ratings and reinforced track systems.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Steel
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div id="product-9" class="bg-white rounded-lg shadow-sm overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b98e07230b-846c39ce3c1ae14bee2c.png" alt="custom roller door design, architectural integration, bespoke commercial">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Custom Design CD-Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">
+                            Fully customizable roller doors designed to meet specific architectural and operational requirements.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="text-sm text-[#333333]/60">
+                                <span class="font-medium">Material:</span> Various
+                            </div>
+                            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-2 rounded font-medium transition-colors">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="text-center mt-12">
+                <button class="border-2 border-[#2C3993] text-[#2C3993] hover:bg-[#2C3993] hover:text-white px-8 py-3 rounded font-medium transition-all">
+                    Load More Products
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Content Section -->
+    <section id="category-content" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-[#2C3993] mb-8">Why Choose Our Commercial Roller Doors?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-12 mb-12">
+                    <div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-4">Superior Engineering</h3>
+                        <p class="text-[#333333]/80 leading-relaxed mb-6">
+                            Our commercial roller doors are engineered to Australian standards with precision manufacturing and quality materials. Each door undergoes rigorous testing to ensure reliable operation in demanding commercial environments.
+                        </p>
+                        
+                        <h3 class="text-xl font-bold text-[#333333] mb-4">Comprehensive Support</h3>
+                        <p class="text-[#333333]/80 leading-relaxed">
+                            From initial consultation through installation and ongoing maintenance, our team provides complete project support. We work closely with architects, builders, and facility managers to deliver optimal solutions.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-4">Industry Certifications</h3>
+                        <p class="text-[#333333]/80 leading-relaxed mb-6">
+                            All our commercial doors meet or exceed Australian Building Codes with certifications for fire rating, wind load, and security performance. Documentation and compliance support included with every installation.
+                        </p>
+                        
+                        <h3 class="text-xl font-bold text-[#333333] mb-4">Custom Solutions</h3>
+                        <p class="text-[#333333]/80 leading-relaxed">
+                            Every commercial project has unique requirements. Our in-house design and manufacturing capabilities allow us to create bespoke solutions that perfectly match your specifications and architectural vision.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-[#e1ecf8] rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-[#2C3993] mb-4">Technical Resources Available</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <i class="fas fa-file-pdf text-3xl text-[#F88229] mb-3"></i>
+                            <h4 class="font-bold text-[#333333] mb-2">CAD Files</h4>
+                            <p class="text-sm text-[#333333]/70">Detailed technical drawings for architectural planning</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-cube text-3xl text-[#F88229] mb-3"></i>
+                            <h4 class="font-bold text-[#333333] mb-2">BIM Models</h4>
+                            <p class="text-sm text-[#333333]/70">3D models for building information modeling</p>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-clipboard-list text-3xl text-[#F88229] mb-3"></i>
+                            <h4 class="font-bold text-[#333333] mb-2">Specifications</h4>
+                            <p class="text-sm text-[#333333]/70">Complete technical specifications and compliance data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Categories Section -->
+    <section id="related-categories" class="py-20 bg-[#F9F9F9]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#2C3993] mb-4">You might also be interested in</h2>
+                <p class="text-lg text-[#333333]/80">Explore our complete range of commercial and industrial door solutions</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div id="related-1" class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/180c8a9bbe-37df39fffbb4f89c6e6e.png" alt="sectional overhead doors, commercial garage doors">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-[#333333] mb-2">Sectional Overhead Doors</h3>
+                        <p class="text-sm text-[#333333]/70 mb-4">Premium sectional doors for commercial applications</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors">
+                            View Category →
+                        </span>
+                    </div>
+                </div>
+                
+                <div id="related-2" class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4cf3a800b9-ab23de311e4281e780dc.png" alt="industrial sliding doors, warehouse doors">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-[#333333] mb-2">Industrial Sliding Doors</h3>
+                        <p class="text-sm text-[#333333]/70 mb-4">Heavy-duty sliding solutions for large openings</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors">
+                            View Category →
+                        </span>
+                    </div>
+                </div>
+                
+                <div id="related-3" class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b7908a9c1-b11bff6ab45004578e4c.png" alt="automated gate systems, commercial security gates">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-[#333333] mb-2">Automated Gate Systems</h3>
+                        <p class="text-sm text-[#333333]/70 mb-4">Smart security gates with automation technology</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors">
+                            View Category →
+                        </span>
+                    </div>
+                </div>
+                
+                <div id="related-4" class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f7acc3e657-246e46ee8841bafe9ea7.png" alt="dock levelers, loading dock equipment">
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-bold text-[#333333] mb-2">Loading Dock Equipment</h3>
+                        <p class="text-sm text-[#333333]/70 mb-4">Complete dock solutions for efficient operations</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors">
+                            View Category →
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section id="cta-section" class="py-20 bg-[#2C3993]">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Need Help Selecting the Right Door?</h2>
+            <p class="text-xl text-[#e1ecf8] mb-8 max-w-2xl mx-auto">
+                Our technical team can help you choose the perfect commercial roller door solution for your specific requirements.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Request Technical Consultation
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-[#2C3993] px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                    Download Product Catalog
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#2C3993] py-16">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-white text-2xl font-bold mb-4">
+                        <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                    </div>
+                    <p class="text-[#e1ecf8] leading-relaxed">
+                        Premium garage door solutions engineered for trade excellence. Serving Victoria's construction industry with quality, reliability, and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">About Us</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Our Work</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Products</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Technical Resources</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Contact Us</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Service Areas</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Geelong</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Melbourne</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Warrnambool</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Ballarat</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Surf Coast</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-3 text-[#e1ecf8]">
+                        <p>123 Industrial Drive<br>Geelong VIC 3220</p>
+                        <p><strong class="text-white">Phone:</strong><br>1300 GGD DOORS</p>
+                        <p><strong class="text-white">Email:</strong><br>info@geelonggaragedoors.com.au</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#e1ecf8]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#e1ecf8] text-center md:text-left">
+                    © 2024 Geelong Garage Doors. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
+                    <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

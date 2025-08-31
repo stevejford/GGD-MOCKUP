@@ -1,0 +1,477 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+        .filter-btn.active { background-color: #F88229; color: white; }
+        .filter-btn { transition: all 0.3s ease; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "deep-blue": "#2C3993",
+        "vibrant-orange": "#F88229",
+        "charcoal": "#333333",
+        "heritage-red": "#901C3B"
+      },
+      "fontFamily": {
+        "sans": [
+          "Montserrat",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-[#F9F9F9]">
+    <!-- Header Section -->
+    <header id="header" class="w-full bg-[#2C3993] px-20 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="text-white text-2xl font-bold">
+                    <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Solutions For Professionals</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Products</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Technical Resources</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Our Work</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">About Us</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Contact Us</span>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <span class="text-white font-medium">1300 GGD DOORS</span>
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                    Trade Portal Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section id="custom-builders-hero" class="relative h-[600px] overflow-hidden">
+        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/334eb1f302-dbcb90c0cb2168d2ad77.png" alt="luxury custom home construction site with premium materials, sophisticated architectural design, high-end residential building">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center max-w-4xl px-8">
+                <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Distinctive Doors for Custom Home Excellence
+                </h1>
+                <p class="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
+                    Partner with us to create architectural statements that reflect your vision and exceed your clients' expectations through superior craftsmanship and innovative design.
+                </p>
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Design Your Custom Door
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb Navigation -->
+    <section id="breadcrumb" class="bg-white py-4">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="flex items-center space-x-2 text-sm">
+                <span class="text-[#F88229] cursor-pointer">Home</span>
+                <span class="text-[#333333]">/</span>
+                <span class="text-[#F88229] cursor-pointer">Solutions For Professionals</span>
+                <span class="text-[#333333]">/</span>
+                <span class="text-[#333333]">Custom Home Builders</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiration Gallery Section -->
+    <section id="inspiration-gallery" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2C3993] mb-4">Project Inspiration Gallery</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Explore our portfolio of distinctive custom installations, each crafted to complement unique architectural visions and enhance property value.
+                </p>
+            </div>
+            
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="filter-btn active px-6 py-3 rounded-lg border-2 border-[#F88229] text-[#F88229] font-medium" data-filter="all">
+                    All Projects
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-lg border-2 border-gray-300 text-[#333333] font-medium hover:border-[#F88229] hover:text-[#F88229]" data-filter="modern">
+                    Modern
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-lg border-2 border-gray-300 text-[#333333] font-medium hover:border-[#F88229] hover:text-[#F88229]" data-filter="timber">
+                    Timber
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-lg border-2 border-gray-300 text-[#333333] font-medium hover:border-[#F88229] hover:text-[#F88229]" data-filter="coastal">
+                    Coastal
+                </button>
+                <button class="filter-btn px-6 py-3 rounded-lg border-2 border-gray-300 text-[#333333] font-medium hover:border-[#F88229] hover:text-[#F88229]" data-filter="heritage">
+                    Heritage
+                </button>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="gallery-item modern group cursor-pointer" data-category="modern">
+                    <div class="overflow-hidden rounded-lg shadow-sm">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/182747acd2-917cfec084357bc78935.png" alt="modern minimalist garage door with clean lines, contemporary home exterior, sleek design">
+                        <div class="bg-white p-6">
+                            <h3 class="text-xl font-bold text-[#333333] mb-2">Contemporary Minimalist</h3>
+                            <p class="text-[#333333]/70 text-sm">Clean lines and premium materials for modern architectural statement</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item timber group cursor-pointer" data-category="timber">
+                    <div class="overflow-hidden rounded-lg shadow-sm">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6d01b9ed8d-1e7a89cf22318780979d.png" alt="timber garage door with natural wood finish, warm residential exterior, organic materials">
+                        <div class="bg-white p-6">
+                            <h3 class="text-xl font-bold text-[#333333] mb-2">Natural Timber Elegance</h3>
+                            <p class="text-[#333333]/70 text-sm">Handcrafted timber doors that celebrate natural beauty and warmth</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item coastal group cursor-pointer" data-category="coastal">
+                    <div class="overflow-hidden rounded-lg shadow-sm">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/62a1442841-c65c9f49c95cf4ea15c5.png" alt="coastal style garage door with weathered finish, beachside home, relaxed architectural style">
+                        <div class="bg-white p-6">
+                            <h3 class="text-xl font-bold text-[#333333] mb-2">Coastal Retreat</h3>
+                            <p class="text-[#333333]/70 text-sm">Weather-resistant designs perfect for coastal environments</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item modern group cursor-pointer" data-category="modern">
+                    <div class="overflow-hidden rounded-lg shadow-sm">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bf9b7b7b72-57586dc9e3b4152cf131.png" alt="glass panel garage door with steel frame, ultra modern home, transparent design elements">
+                        <div class="bg-white p-6">
+                            <h3 class="text-xl font-bold text-[#333333] mb-2">Glass &amp; Steel Fusion</h3>
+                            <p class="text-[#333333]/70 text-sm">Transparent panels create stunning visual connections</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item heritage group cursor-pointer" data-category="heritage">
+                    <div class="overflow-hidden rounded-lg shadow-sm">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/48e692be8f-f69000bd0aa8d1e2ffec.png" alt="heritage style garage door with traditional details, classic home architecture, period features">
+                        <div class="bg-white p-6">
+                            <h3 class="text-xl font-bold text-[#333333] mb-2">Heritage Restoration</h3>
+                            <p class="text-[#333333]/70 text-sm">Authentic period details with modern functionality</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item timber group cursor-pointer" data-category="timber">
+                    <div class="overflow-hidden rounded-lg shadow-sm">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3a580eb632-4e97b4670b49a8b9b478.png" alt="cedar garage door with horizontal slats, mid-century modern home, warm wood tones">
+                        <div class="bg-white p-6">
+                            <h3 class="text-xl font-bold text-[#333333] mb-2">Cedar Horizontal</h3>
+                            <p class="text-[#333333]/70 text-sm">Premium cedar construction with contemporary styling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Configurator Tool -->
+    <section id="product-configurator" class="py-20 bg-[#F9F9F9]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2C3993] mb-4">Design Your Custom Door</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Use our interactive configurator to visualize your custom door design and receive an instant estimate.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-sm p-8">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Visual Preview Area -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-gray-100 rounded-lg p-8 h-96 flex items-center justify-center">
+                            <div class="text-center">
+                                <img class="w-full h-80 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/464e7ca54e-14d9abfb70417b67fb34.png" alt="customizable garage door preview with modern home backdrop, 3D visualization, interactive design tool">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Configuration Options -->
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-[#333333] font-semibold mb-3">Material</label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:border-[#F88229] focus:outline-none">
+                                <option>Select Material</option>
+                                <option>Premium Steel</option>
+                                <option>Aluminum</option>
+                                <option>Timber - Cedar</option>
+                                <option>Timber - Oak</option>
+                                <option>Composite</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[#333333] font-semibold mb-3">Color Finish</label>
+                            <div class="grid grid-cols-4 gap-3">
+                                <div class="w-12 h-12 bg-white border-2 border-gray-300 rounded cursor-pointer hover:border-[#F88229]"></div>
+                                <div class="w-12 h-12 bg-gray-800 border-2 border-gray-300 rounded cursor-pointer hover:border-[#F88229]"></div>
+                                <div class="w-12 h-12 bg-amber-900 border-2 border-gray-300 rounded cursor-pointer hover:border-[#F88229]"></div>
+                                <div class="w-12 h-12 bg-green-800 border-2 border-gray-300 rounded cursor-pointer hover:border-[#F88229]"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[#333333] font-semibold mb-3">Window Configuration</label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:border-[#F88229] focus:outline-none">
+                                <option>No Windows</option>
+                                <option>Single Row</option>
+                                <option>Double Row</option>
+                                <option>Custom Pattern</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[#333333] font-semibold mb-3">Hardware Style</label>
+                            <select class="w-full p-3 border border-gray-300 rounded-lg focus:border-[#F88229] focus:outline-none">
+                                <option>Standard Chrome</option>
+                                <option>Black Powder Coat</option>
+                                <option>Brushed Stainless</option>
+                                <option>Antique Bronze</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Price Estimate Display -->
+                        <div class="bg-[#e1ecf8] rounded-lg p-6 mt-8">
+                            <h3 class="text-[#2C3993] font-bold text-lg mb-2">Estimated Price</h3>
+                            <div class="text-3xl font-bold text-[#2C3993] mb-4">$4,850 - $6,200</div>
+                            <p class="text-sm text-[#333333]/70">*Price includes supply and professional installation</p>
+                        </div>
+                        
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white py-4 rounded-lg font-semibold text-lg transition-colors">
+                            Request This Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Materials & Finishes Section -->
+    <section id="materials-finishes" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2C3993] mb-4">Premium Materials &amp; Finishes</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Choose from our curated selection of premium materials and finishes, each selected for durability, beauty, and architectural compatibility.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/359cd43b99-1ca529552df0f59f007f.png" alt="premium steel garage door material sample, brushed finish, industrial texture">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Premium Steel</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Durable, low-maintenance steel with superior insulation properties and powder-coat finishes.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e8f95f7467-9e7d5725cd3e18281a77.png" alt="natural cedar wood material sample, warm grain texture, organic finish">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Natural Cedar</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Sustainably sourced cedar with natural resistance to weather and insects, ages beautifully.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4dc992fa7d-3fc05692af26164f6fca.png" alt="aluminum garage door material sample, lightweight construction, modern finish">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Marine Grade Aluminum</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Corrosion-resistant aluminum perfect for coastal environments, lightweight yet strong.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/94a69aa65d-94c078adfef0de359ccc.png" alt="composite material sample, textured surface, modern engineered material">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Composite Blend</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Engineered composite offering wood aesthetics with enhanced durability and minimal maintenance.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/08673e3ce3-62cc28073f42e10fad6d.png" alt="powder coat finish samples, various colors, professional coating">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Powder Coat Finishes</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Professional powder coating in 20+ colors with superior adhesion and fade resistance.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dd355066c0-b57a8bb03fbff7fb23ab.png" alt="wood stain samples, natural timber finishes, rich color variations">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Timber Stains</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Premium penetrating stains that enhance natural wood grain while providing UV protection.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/74102de3e8-e9eb7a70ede29275c056.png" alt="textured finish samples, embossed patterns, tactile surfaces">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Textured Finishes</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Embossed and textured finishes that add visual interest and hide minor imperfections.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer border border-gray-200 hover:border-[#F88229] transition-colors">
+                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a57ebc3bb-77bf0e429771046ca421.png" alt="custom hardware samples, premium handles and hinges, architectural details">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Designer Hardware</h3>
+                        <p class="text-[#333333]/70 text-sm leading-relaxed">Architectural hardware in multiple finishes to complement any design aesthetic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="py-20 bg-[#2C3993]">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h2 class="text-3xl font-bold text-white mb-12">What Custom Builders Say</h2>
+            <blockquote class="text-3xl md:text-4xl text-white font-medium mb-8 leading-relaxed max-w-4xl mx-auto">
+                "Working with Geelong Garage Doors has elevated our custom homes to a new level. Their attention to detail and ability to create truly bespoke solutions that perfectly complement our architectural designs is unmatched."
+            </blockquote>
+            <div class="text-white">
+                <p class="text-xl font-semibold mb-2">David Richardson</p>
+                <p class="text-[#e1ecf8]">Principal, Richardson Custom Homes</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call-to-Action Section -->
+    <section id="final-cta" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#2C3993] mb-6">
+                Ready to Create Something Extraordinary?
+            </h2>
+            <p class="text-xl text-[#333333]/80 mb-8 max-w-2xl mx-auto">
+                Let's collaborate to design and manufacture the perfect garage door solution that will set your custom home apart and delight your clients.
+            </p>
+            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-colors">
+                Book a Consultation
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#2C3993] py-16">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-white text-2xl font-bold mb-4">
+                        <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                    </div>
+                    <p class="text-[#e1ecf8] leading-relaxed">
+                        Premium garage door solutions engineered for trade excellence. Serving Victoria's construction industry with quality, reliability, and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Products</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Residential doors</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Commercial doors</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Custom solutions</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Technical specifications</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">CAD downloads</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Installation guides</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Trade portal</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Contact us</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Warranty</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#e1ecf8] text-center md:text-left">
+                    © 2024 Geelong Garage Doors. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Gallery Filter Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterButtons.forEach(btn => {
+                        btn.classList.remove('active', 'bg-[#F88229]', 'text-white');
+                        btn.classList.add('border-gray-300', 'text-[#333333]');
+                    });
+                    
+                    this.classList.add('active', 'bg-[#F88229]', 'text-white');
+                    this.classList.remove('border-gray-300', 'text-[#333333]');
+                    
+                    // Filter gallery items
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+
+</body></html>

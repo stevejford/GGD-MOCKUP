@@ -1,0 +1,413 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "deep-blue": "#2C3993",
+        "vibrant-orange": "#F88229",
+        "charcoal": "#333333",
+        "heritage-red": "#901C3B"
+      },
+      "fontFamily": {
+        "sans": [
+          "Montserrat",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-[#F9F9F9]">
+    <!-- Header Section -->
+    <header id="header" class="w-full bg-[#2C3993] px-20 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="text-white text-2xl font-bold">
+                    <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Solutions For Professionals</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Products</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Technical Resources</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Our Work</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">About Us</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Contact Us</span>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <span class="text-white font-medium">1300 GGD DOORS</span>
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                    Trade Portal Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero Section -->
+    <section id="volume-builder-hero" class="relative h-[500px] overflow-hidden">
+        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c261880436-c0fc199338325350abb3.png" alt="volume builder construction site with multiple residential homes under construction, professional builders, modern subdivision development, construction equipment">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center max-w-4xl px-8">
+                <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Streamlined Solutions for Volume Builders
+                </h1>
+                <p class="text-white/90 text-xl mb-8 max-w-3xl mx-auto">
+                    Reliable delivery schedules, standardized specifications, and bulk pricing designed to keep your development projects on track and within budget.
+                </p>
+                <button class="bg-[#f58220] hover:bg-orange-600 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-colors">
+                    Request a Bulk Quote
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Value Propositions Section -->
+    <section id="value-propositions" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#002e5b] mb-4">Why Volume Builders Choose Us</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Purpose-built solutions that address the unique challenges of large-scale residential development projects.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-clock text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#002e5b] mb-4">On-Time Delivery</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Guaranteed delivery schedules aligned with your construction timeline. No delays, no surprises - just reliable service you can count on.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-shield-halved text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#002e5b] mb-4">Durable Products</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Premium materials and construction methods ensure long-lasting performance, reducing callback issues and warranty claims.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-dollar-sign text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#002e5b] mb-4">Volume Pricing</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Competitive bulk pricing structures that improve your project margins while maintaining superior quality standards.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-handshake text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-[#002e5b] mb-4">Dedicated Support</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Assigned account managers who understand your business and provide personalized service throughout your project lifecycle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bulk Pricing Calculator Tool -->
+    <section id="pricing-calculator" class="py-20 bg-[#f6f6f8]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-[#002e5b] mb-4">Bulk Pricing Calculator</h2>
+                <p class="text-xl text-[#333333]/80 max-w-2xl mx-auto">
+                    Get instant pricing estimates for your volume projects with our interactive calculator tool.
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-[#333333] text-base font-medium mb-2">Product Type</label>
+                            <div class="relative">
+                                <select class="w-full h-12 pl-4 pr-10 bg-white rounded border border-gray-300 text-[#333333] appearance-none">
+                                    <option>Select product type...</option>
+                                    <option>Residential Sectional Doors</option>
+                                    <option>Panel Lift Doors</option>
+                                    <option>Roller Doors</option>
+                                    <option>Tilt Doors</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[#333333] text-base font-medium mb-2">Door Size</label>
+                            <div class="relative">
+                                <select class="w-full h-12 pl-4 pr-10 bg-white rounded border border-gray-300 text-[#333333] appearance-none">
+                                    <option>Select door size...</option>
+                                    <option>2400mm x 2100mm (Standard Single)</option>
+                                    <option>2700mm x 2100mm (Wide Single)</option>
+                                    <option>4800mm x 2100mm (Standard Double)</option>
+                                    <option>5400mm x 2100mm (Wide Double)</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[#333333] text-base font-medium mb-2">Quantity</label>
+                            <input type="number" class="w-full h-12 pl-4 bg-white rounded border border-gray-300 text-[#333333]" placeholder="Enter quantity (minimum 10)">
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <label class="block text-[#333333] text-base font-medium mb-2">Material Finish</label>
+                            <div class="relative">
+                                <select class="w-full h-12 pl-4 pr-10 bg-white rounded border border-gray-300 text-[#333333] appearance-none">
+                                    <option>Select finish...</option>
+                                    <option>Colorbond Steel</option>
+                                    <option>Powder Coated Aluminium</option>
+                                    <option>Timber Look</option>
+                                    <option>Custom Color Match</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[#333333] text-base font-medium mb-2">Motor Type</label>
+                            <div class="relative">
+                                <select class="w-full h-12 pl-4 pr-10 bg-white rounded border border-gray-300 text-[#333333] appearance-none">
+                                    <option>Select motor type...</option>
+                                    <option>Standard Chain Drive</option>
+                                    <option>Belt Drive (Quiet)</option>
+                                    <option>Direct Drive (Premium)</option>
+                                    <option>No Motor Required</option>
+                                </select>
+                                <i class="fa-solid fa-chevron-down absolute right-3 top-4 text-gray-400"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="pt-4">
+                            <button class="w-full bg-[#f58220] hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                                Calculate Estimate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-6 bg-[#e1ecf8] rounded-lg">
+                    <p class="text-sm text-[#002e5b] leading-relaxed">
+                        <strong>Disclaimer:</strong> Pricing estimates are indicative only and based on standard specifications. Final pricing may vary depending on specific project requirements, site conditions, and additional features. Contact our team for detailed quotations and project consultation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommended Products Section -->
+    <section id="recommended-products" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#002e5b] mb-4">Recommended Products for Volume Builds</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Our most popular door systems for residential developments, chosen for their reliability, efficiency, and homeowner satisfaction.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/57d8753c4b-91284fb77f30ff75bd0e.png" alt="premium residential sectional garage door, modern home exterior, steel construction">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Premium Sectional Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">High-quality residential doors with superior insulation and modern design aesthetics. Perfect for premium developments.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#f58220] font-semibold">From $2,450 each</span>
+                            <span class="text-[#f58220] font-medium hover:text-orange-600 transition-colors cursor-pointer">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a2993af33c-7d8fca66d466fdb48c2b.png" alt="standard residential panel lift garage door, affordable housing, quality construction">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Standard Panel Lift</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">Reliable and cost-effective solution for standard residential applications. Proven performance with excellent value.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#f58220] font-semibold">From $1,850 each</span>
+                            <span class="text-[#f58220] font-medium hover:text-orange-600 transition-colors cursor-pointer">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group cursor-pointer hover:shadow-md transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8de15f0fc8-d82d75eed42b6fce2f30.png" alt="roller garage door residential, compact design, modern home, space saving">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Compact Roller Series</h3>
+                        <p class="text-[#333333]/70 mb-4 leading-relaxed">Space-efficient design ideal for narrow driveways and compact developments. Maximum ceiling height retention.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-[#f58220] font-semibold">From $2,150 each</span>
+                            <span class="text-[#f58220] font-medium hover:text-orange-600 transition-colors cursor-pointer">
+                                View Details →
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-[#f6f6f8]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#002e5b] mb-4">How Our Volume Builder Process Works</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    A streamlined procurement process designed specifically for the efficiency requirements of volume building projects.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-[#f58220] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#002e5b] mb-4">Project Consultation</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Our team reviews your development plans, discusses product specifications, and provides recommendations tailored to your project requirements and budget parameters.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-[#f58220] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#002e5b] mb-4">Bulk Quote &amp; Agreement</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Receive detailed pricing based on volume commitments, establish delivery schedules aligned with your construction timeline, and finalize supply agreements with flexible terms.
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-[#f58220] rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-white text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#002e5b] mb-4">Coordinated Delivery</h3>
+                    <p class="text-[#333333] leading-relaxed">
+                        Staged deliveries coordinated with your construction schedule, quality assurance inspections, and dedicated support throughout the installation process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call-to-Action Section -->
+    <section id="volume-builder-cta" class="py-20 bg-[#002e5b]">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
+                Ready to Streamline Your Next Development?
+            </h2>
+            <p class="text-xl text-[#e1ecf8] mb-8 max-w-3xl mx-auto">
+                Partner with our dedicated volume builder team to ensure your residential development projects are delivered on time, within budget, and to the highest quality standards.
+            </p>
+            <button class="bg-[#f58220] hover:bg-orange-600 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-colors">
+                Get in Touch with an Account Manager
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#002e5b] py-12">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-[#e1ecf8] text-lg leading-7 mb-4">Products</h4>
+                    <div class="space-y-2">
+                        <div class="text-[#e1ecf8] text-base leading-6">Residential doors</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">Commercial doors</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">Custom solutions</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-[#e1ecf8] text-lg leading-7 mb-4">Resources</h4>
+                    <div class="space-y-2">
+                        <div class="text-[#e1ecf8] text-base leading-6">Technical specifications</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">CAD downloads</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">Installation guides</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-[#e1ecf8] text-lg leading-7 mb-4">Support</h4>
+                    <div class="space-y-2">
+                        <div class="text-[#e1ecf8] text-base leading-6">Trade portal</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">Contact us</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">Warranty</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-[#e1ecf8] text-lg leading-7 mb-4">Contact</h4>
+                    <div class="space-y-2">
+                        <div class="text-[#e1ecf8] text-base leading-6">1300 GGD DOORS</div>
+                        <div class="text-[#e1ecf8] text-base leading-6">info@geelonggaragedoors.com.au</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 mt-8 pt-8 text-center">
+                <div class="text-[#e1ecf8] text-base leading-6">© 2024 Geelong Garage Doors. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>

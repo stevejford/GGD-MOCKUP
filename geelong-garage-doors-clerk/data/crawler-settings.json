@@ -1,0 +1,12 @@
+{
+  "downloadAssets": true,
+  "wait": 3,
+  "delay": 2,
+  "maxPages": 0,
+  "concurrency": 5,
+  "progressiveCrawling": true,
+  "stealthMode": false,
+  "networkCapture": true,
+  "consoleLogging": true,
+  "headlessMode": true
+}

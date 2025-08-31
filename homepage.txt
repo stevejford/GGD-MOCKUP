@@ -1,0 +1,363 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "deep-blue": "#2C3993",
+        "vibrant-orange": "#F88229",
+        "charcoal": "#333333",
+        "heritage-red": "#901C3B"
+      },
+      "fontFamily": {
+        "sans": [
+          "Montserrat",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-[#F9F9F9]">
+    <!-- Header Section -->
+    <header id="header" class="w-full bg-[#2C3993] px-20 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="text-white text-2xl font-bold">
+                    <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Solutions For Professionals</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Products</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Technical Resources</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Our Work</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">About Us</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Contact Us</span>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <span class="text-white font-medium">1300 GGD DOORS</span>
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                    Trade Portal Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-[600px] overflow-hidden">
+        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3998becd13-a73dfabd59d7cb3838a8.png" alt="modern architectural home with integrated garage door, premium residential exterior, contemporary design">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/60"></div>
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center max-w-4xl px-8">
+                <h1 class="text-white text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Premium Garage Door Solutions Engineered for Trade Excellence
+                </h1>
+                <p class="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
+                    Delivering architectural excellence and technical precision for Australia's leading builders, architects, and trade professionals.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-[#F88229] hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                        Request a Quote
+                    </button>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-[#2C3993] px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                        View Our Work
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Trust Bar -->
+    <section id="brand-trust" class="bg-white py-12">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <p class="text-center text-[#333333]/70 text-sm mb-8 font-medium">TRUSTED PARTNER OF LEADING BRANDS</p>
+            <div class="flex items-center justify-center space-x-12 opacity-60">
+                <div class="text-2xl font-bold text-[#333333]">B&amp;D</div>
+                <div class="text-2xl font-bold text-[#333333]">Steel-Line</div>
+                <div class="text-2xl font-bold text-[#333333]">Gliderol</div>
+                <div class="text-2xl font-bold text-[#333333]">Danmar</div>
+                <div class="text-2xl font-bold text-[#333333]">Centurion</div>
+                <div class="text-2xl font-bold text-[#333333]">ATA</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions for Professionals Section -->
+    <section id="solutions-professionals" class="py-20 bg-[#F9F9F9]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2C3993] mb-4">Solutions for Professionals</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Tailored solutions designed specifically for the unique requirements of trade professionals across the construction industry.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-sm p-8 text-center">
+                    <div class="mb-6">
+                        <img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c261880436-b20c515ee1a62d79c829.png" alt="volume builder construction site, multiple houses under construction, professional builder">
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#2C3993] mb-4">For Volume Builders</h3>
+                    <p class="text-[#333333] mb-6 leading-relaxed">
+                        Streamlined processes, standardized specifications, and reliable delivery schedules to keep your projects on track and on budget.
+                    </p>
+                    <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                        Explore Solutions →
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm p-8 text-center">
+                    <div class="mb-6">
+                        <img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b98e07230b-846c39ce3c1ae14bee2c.png" alt="architect reviewing blueprints, modern office, professional architect working">
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#2C3993] mb-4">For Architects</h3>
+                    <p class="text-[#333333] mb-6 leading-relaxed">
+                        Technical expertise, CAD resources, and custom manufacturing capabilities to bring your architectural vision to life.
+                    </p>
+                    <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                        Technical Resources →
+                    </button>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm p-8 text-center">
+                    <div class="mb-6">
+                        <img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f57575aaa3-bf34b08c95d88be9384c.png" alt="custom home builder, luxury residential construction, professional contractor">
+                    </div>
+                    <h3 class="text-2xl font-bold text-[#2C3993] mb-4">For Custom Builders</h3>
+                    <p class="text-[#333333] mb-6 leading-relaxed">
+                        Bespoke solutions and collaborative partnerships to create distinctive architectural statements that exceed expectations.
+                    </p>
+                    <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                        Custom Solutions →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products & Capabilities Section -->
+    <section id="featured-products" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2C3993] mb-4">Featured Products &amp; Capabilities</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Comprehensive solutions covering every aspect of garage door manufacturing, installation, and maintenance.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f7acc3e657-246e46ee8841bafe9ea7.png" alt="custom garage door manufacturing, precision engineering, modern factory">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Custom Manufacturing</h3>
+                    <p class="text-[#333333]/70 leading-relaxed">
+                        Bespoke solutions engineered to your exact specifications with precision manufacturing capabilities.
+                    </p>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/180c8a9bbe-37df39fffbb4f89c6e6e.png" alt="architectural garage doors, modern residential design, premium materials">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Architectural Doors</h3>
+                    <p class="text-[#333333]/70 leading-relaxed">
+                        Premium residential solutions that seamlessly integrate with contemporary architectural designs.
+                    </p>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/76ede3eb5e-da70045a6d29da75472e.png" alt="industrial garage doors, commercial warehouse, heavy duty doors">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Industrial Solutions</h3>
+                    <p class="text-[#333333]/70 leading-relaxed">
+                        Heavy-duty commercial and industrial doors built to withstand demanding operational environments.
+                    </p>
+                </div>
+                
+                <div class="group cursor-pointer">
+                    <div class="mb-6 overflow-hidden rounded-lg">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b7908a9c1-b11bff6ab45004578e4c.png" alt="smart garage door system, automated controls, modern technology integration">
+                    </div>
+                    <h3 class="text-xl font-bold text-[#333333] mb-3">Smart Systems Integration</h3>
+                    <p class="text-[#333333]/70 leading-relaxed">
+                        Advanced automation and smart technology integration for modern convenience and security.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Work Section -->
+    <section id="our-work" class="py-20 bg-[#F9F9F9]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#2C3993] mb-4">Our Work</h2>
+                <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto">
+                    Showcasing our commitment to excellence through successful projects across residential, commercial, and industrial applications.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5aceb97141-96d91fd9aca6a261508a.png" alt="luxury residential garage door installation, modern home exterior, premium finish">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Luxury Residential Project</h3>
+                        <p class="text-[#333333]/70 mb-4">Custom architectural doors for premium residential development in Melbourne's eastern suburbs.</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors cursor-pointer">
+                            View Case Study →
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dde1771d61-887a6a8c843554f9d7a7.png" alt="commercial building garage doors, modern office complex, professional installation">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Commercial Complex</h3>
+                        <p class="text-[#333333]/70 mb-4">Large-scale commercial installation for major office development in Geelong CBD.</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors cursor-pointer">
+                            View Case Study →
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden group cursor-pointer">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4cf3a800b9-ab23de311e4281e780dc.png" alt="industrial warehouse doors, heavy duty installation, commercial facility">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#333333] mb-3">Industrial Facility</h3>
+                        <p class="text-[#333333]/70 mb-4">Heavy-duty industrial doors for manufacturing facility expansion in Warrnambool.</p>
+                        <span class="text-[#F88229] font-medium hover:text-orange-600 transition-colors cursor-pointer">
+                            View Case Study →
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimonial" class="py-20 bg-[#2C3993]">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <blockquote class="text-3xl md:text-4xl text-white font-medium mb-8 leading-relaxed max-w-4xl mx-auto">
+                "Geelong Garage Doors consistently delivers exceptional quality and service. Their technical expertise and attention to detail have made them our preferred partner for premium residential projects."
+            </blockquote>
+            <div class="text-white">
+                <p class="text-xl font-semibold mb-2">Sarah Mitchell</p>
+                <p class="text-[#e1ecf8]">Principal Architect, Mitchell &amp; Associates</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call-to-Action Section -->
+    <section id="final-cta" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#2C3993] mb-6">
+                Ready to Elevate Your Next Project?
+            </h2>
+            <p class="text-xl text-[#333333]/80 mb-8 max-w-2xl mx-auto">
+                Partner with us to deliver exceptional garage door solutions that exceed your clients' expectations and enhance your professional reputation.
+            </p>
+            <button class="bg-[#F88229] hover:bg-orange-600 text-white px-12 py-4 rounded-lg font-semibold text-xl transition-colors">
+                Get Your Quote Today
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#2C3993] py-16">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-white text-2xl font-bold mb-4">
+                        <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                    </div>
+                    <p class="text-[#e1ecf8] leading-relaxed">
+                        Premium garage door solutions engineered for trade excellence. Serving Victoria's construction industry with quality, reliability, and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">About Us</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Our Work</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Products</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Technical Resources</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Contact Us</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Service Areas</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Geelong</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Melbourne</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Warrnambool</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Ballarat</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Surf Coast</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-3 text-[#e1ecf8]">
+                        <p>123 Industrial Drive<br>Geelong VIC 3220</p>
+                        <p><strong class="text-white">Phone:</strong><br>1300 GGD DOORS</p>
+                        <p><strong class="text-white">Email:</strong><br>info@geelonggaragedoors.com.au</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#e1ecf8]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#e1ecf8] text-center md:text-left">
+                    © 2024 Geelong Garage Doors. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
+                    <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body></html>

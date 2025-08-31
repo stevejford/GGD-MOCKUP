@@ -1,0 +1,15 @@
+{
+  "name": "crawlforai",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "crawl": "node crawler.js",
+    "crawl:brands": "node crawler.js brands"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "p-queue": "^7.4.1",
+    "pg": "^8.11.5"
+  }
+}
+

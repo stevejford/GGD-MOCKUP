@@ -1,0 +1,588 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>::-webkit-scrollbar { display: none;}</style>
+    
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "deep-blue": "#002e5b",
+        "vibrant-orange": "#f58220",
+        "charcoal": "#333333",
+        "powder-blue": "#e1ecf8"
+      },
+      "fontFamily": {
+        "montserrat": [
+          "Montserrat",
+          "sans-serif"
+        ],
+        "open-sans": [
+          "Open Sans",
+          "sans-serif"
+        ],
+        "sans": [
+          "Montserrat",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+      body {
+        font-family: 'Montserrat', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: "Font Awesome 6 Free", "Font Awesome 6 Brands" !important;
+      }
+    </style><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header -->
+    <header id="header" class="w-full h-[80px] bg-[#002e5b] px-20 flex items-center justify-between">
+        <div class="flex items-center">
+            <div class="text-white text-2xl font-montserrat font-bold">GGD</div>
+        </div>
+        <nav class="flex items-center gap-8">
+            <span class="text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Solutions</span>
+            <span class="text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Products</span>
+            <span class="text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Resources</span>
+        </nav>
+        <div class="px-6 py-3 bg-[#f58220] rounded text-white font-medium hover:bg-orange-600 transition-colors cursor-pointer">
+            Trade Portal
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section id="breadcrumb" class="w-full px-20 py-4 bg-white">
+        <div class="flex items-center gap-2 text-sm">
+            <span class="text-[#f58220] cursor-pointer">Home</span>
+            <span class="text-[#333333]">/</span>
+            <span class="text-[#f58220] cursor-pointer">Services</span>
+            <span class="text-[#333333]">/</span>
+            <span class="text-[#333333]">Local Service Areas</span>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero" class="w-full h-[600px] relative bg-gradient-to-r from-[#002e5b] to-[#2c3993] flex items-center justify-center">
+        <img class="absolute inset-0 w-full h-full object-cover opacity-30" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4979cf93a9-4915ec641d2854285848.png" alt="Modern garage door installation on contemporary home in Geelong area">
+        <div class="relative z-10 text-center text-white max-w-4xl px-8">
+            <h1 class="text-5xl font-montserrat font-bold mb-6 leading-tight">Premium Garage Door Services Across Geelong &amp; Surrounding Areas</h1>
+            <p class="text-xl mb-8 text-[#e1ecf8] max-w-2xl mx-auto">Expert installation, repair, and maintenance services for residential and commercial properties throughout the greater Geelong region</p>
+            <div class="flex gap-4 justify-center">
+                <button class="px-8 py-4 bg-[#f58220] text-white font-semibold rounded hover:bg-orange-600 transition-colors">
+                    Book Service Now
+                </button>
+                <button class="px-8 py-4 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-[#002e5b] transition-colors">
+                    View Service Areas
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Overview -->
+    <section id="service-areas" class="w-full py-16 px-20 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-montserrat font-bold text-[#002e5b] mb-4">Our Service Coverage</h2>
+                <p class="text-lg text-[#333333] max-w-3xl mx-auto">Providing comprehensive garage door services across Geelong and the Surf Coast region with rapid response times and local expertise</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#f6f6f8] rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-montserrat font-semibold text-[#002e5b] mb-3">Greater Geelong</h3>
+                    <p class="text-[#333333] mb-4">Complete coverage of Geelong CBD, Newtown, East Geelong, West Geelong, and all surrounding suburbs</p>
+                    <span class="text-[#f58220] font-medium hover:underline cursor-pointer">View Geelong Areas →</span>
+                </div>
+
+                <div class="bg-[#f6f6f8] rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-water text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-montserrat font-semibold text-[#002e5b] mb-3">Surf Coast</h3>
+                    <p class="text-[#333333] mb-4">Specialized services for coastal properties in Torquay, Lorne, Apollo Bay and surrounding coastal areas</p>
+                    <span class="text-[#f58220] font-medium hover:underline cursor-pointer">View Coastal Areas →</span>
+                </div>
+
+                <div class="bg-[#f6f6f8] rounded-lg p-8 text-center">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mountain text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-xl font-montserrat font-semibold text-[#002e5b] mb-3">Hinterland</h3>
+                    <p class="text-[#333333] mb-4">Rural and semi-rural service coverage including Bannockburn, Inverleigh, and Colac regions</p>
+                    <span class="text-[#f58220] font-medium hover:underline cursor-pointer">View Rural Areas →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Geelong Areas Detail -->
+    <section id="geelong-services" class="w-full py-16 px-20 bg-[#e1ecf8]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-montserrat font-bold text-[#002e5b] mb-6">Geelong Metro Services</h2>
+                    <p class="text-lg text-[#333333] mb-8">As Geelong's premier garage door specialists, we provide comprehensive services across all metropolitan areas with same-day emergency response and scheduled maintenance programs.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-semibold text-[#002e5b] mb-2">Central Geelong</h4>
+                            <ul class="text-sm text-[#333333] space-y-1">
+                                <li>• Geelong CBD</li>
+                                <li>• East Geelong</li>
+                                <li>• West Geelong</li>
+                                <li>• South Geelong</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-semibold text-[#002e5b] mb-2">Northern Suburbs</h4>
+                            <ul class="text-sm text-[#333333] space-y-1">
+                                <li>• Newtown</li>
+                                <li>• Hamlyn Heights</li>
+                                <li>• Herne Hill</li>
+                                <li>• Manifold Heights</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-semibold text-[#002e5b] mb-2">Eastern Areas</h4>
+                            <ul class="text-sm text-[#333333] space-y-1">
+                                <li>• Belmont</li>
+                                <li>• Grovedale</li>
+                                <li>• Waurn Ponds</li>
+                                <li>• Mount Duneed</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white rounded-lg p-4">
+                            <h4 class="font-semibold text-[#002e5b] mb-2">Western Corridor</h4>
+                            <ul class="text-sm text-[#333333] space-y-1">
+                                <li>• Lara</li>
+                                <li>• Corio</li>
+                                <li>• Norlane</li>
+                                <li>• North Shore</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <button class="px-6 py-3 bg-[#f58220] text-white font-semibold rounded hover:bg-orange-600 transition-colors">
+                            Book Geelong Service
+                        </button>
+                        <button class="px-6 py-3 border-2 border-[#002e5b] text-[#002e5b] font-semibold rounded hover:bg-[#002e5b] hover:text-white transition-colors">
+                            Get Quote
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8">
+                    <h3 class="text-2xl font-montserrat font-semibold text-[#002e5b] mb-6">Geelong Service Highlights</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-[#f58220] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#333333] mb-1">24/7 Emergency Response</h4>
+                                <p class="text-sm text-[#333333]">Round-the-clock emergency repairs across all Geelong areas</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-[#f58220] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#333333] mb-1">Local Expertise</h4>
+                                <p class="text-sm text-[#333333]">Deep understanding of Geelong's architectural styles and requirements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-[#f58220] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#333333] mb-1">Commercial &amp; Residential</h4>
+                                <p class="text-sm text-[#333333]">Full-service solutions for homes, businesses, and industrial facilities</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-6 h-6 bg-[#f58220] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                                <i class="fas fa-check text-white text-xs"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-[#333333] mb-1">Preventive Maintenance</h4>
+                                <p class="text-sm text-[#333333]">Scheduled maintenance programs to extend door lifespan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surf Coast Services -->
+    <section id="surf-coast-services" class="w-full py-16 px-20 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <img class="w-full h-80 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/da92611496-39a1a7838ebec7c80136.png" alt="Coastal garage door installation on beachside home in Torquay with salt-resistant materials">
+                </div>
+                
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-4xl font-montserrat font-bold text-[#002e5b] mb-6">Surf Coast Specialists</h2>
+                    <p class="text-lg text-[#333333] mb-6">Coastal environments demand specialized solutions. Our surf coast services feature corrosion-resistant materials and designs built to withstand salt air and harsh weather conditions.</p>
+                    
+                    <div class="bg-[#f6f6f8] rounded-lg p-6 mb-6">
+                        <h4 class="font-semibold text-[#002e5b] mb-4">Coastal Service Areas</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <ul class="text-sm text-[#333333] space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Torquay
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Anglesea
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Aireys Inlet
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Lorne
+                                </li>
+                            </ul>
+                            <ul class="text-sm text-[#333333] space-y-2">
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Apollo Bay
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Winchelsea
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Moriac
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <i class="fas fa-map-pin text-[#f58220] text-xs"></i>
+                                    Deans Marsh
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4 mb-6">
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-shield-alt text-[#f58220] text-lg"></i>
+                            <span class="font-medium text-[#333333]">Marine-grade corrosion protection</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-wind text-[#f58220] text-lg"></i>
+                            <span class="font-medium text-[#333333]">Wind-resistant design specifications</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i class="fas fa-tools text-[#f58220] text-lg"></i>
+                            <span class="font-medium text-[#333333]">Specialized coastal installation techniques</span>
+                        </div>
+                    </div>
+
+                    <button class="px-6 py-3 bg-[#f58220] text-white font-semibold rounded hover:bg-orange-600 transition-colors">
+                        Book Coastal Service
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Types -->
+    <section id="service-types" class="w-full py-16 px-20 bg-[#f6f6f8]">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-montserrat font-bold text-[#002e5b] mb-4">Comprehensive Service Solutions</h2>
+                <p class="text-lg text-[#333333] max-w-3xl mx-auto">From emergency repairs to planned installations, we deliver professional garage door services across all our coverage areas</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-wrench text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-lg font-montserrat font-semibold text-[#002e5b] mb-3">Emergency Repairs</h3>
+                    <p class="text-[#333333] text-sm mb-4">24/7 emergency repair services for broken springs, damaged panels, and malfunctioning openers</p>
+                    <span class="text-[#f58220] font-medium text-sm hover:underline cursor-pointer">Learn More →</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-hammer text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-lg font-montserrat font-semibold text-[#002e5b] mb-3">New Installations</h3>
+                    <p class="text-[#333333] text-sm mb-4">Professional installation of residential and commercial garage doors with full warranty coverage</p>
+                    <span class="text-[#f58220] font-medium text-sm hover:underline cursor-pointer">Learn More →</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-cog text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-lg font-montserrat font-semibold text-[#002e5b] mb-3">Maintenance Programs</h3>
+                    <p class="text-[#333333] text-sm mb-4">Scheduled maintenance services to prevent breakdowns and extend door lifespan</p>
+                    <span class="text-[#f58220] font-medium text-sm hover:underline cursor-pointer">Learn More →</span>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 text-center shadow-sm">
+                    <div class="w-16 h-16 bg-[#e1ecf8] rounded-lg flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-2xl text-[#002e5b]"></i>
+                    </div>
+                    <h3 class="text-lg font-montserrat font-semibold text-[#002e5b] mb-3">Smart Automation</h3>
+                    <p class="text-[#333333] text-sm mb-4">Modern opener installations and smart home integration services</p>
+                    <span class="text-[#f58220] font-medium text-sm hover:underline cursor-pointer">Learn More →</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hinterland Services -->
+    <section id="hinterland-services" class="w-full py-16 px-20 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-montserrat font-bold text-[#002e5b] mb-6">Rural &amp; Hinterland Coverage</h2>
+                    <p class="text-lg text-[#333333] mb-6">Extending our premium services to rural properties and hinterland communities with specialized solutions for agricultural and semi-rural applications.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-[#f6f6f8] rounded-lg p-6">
+                            <h4 class="font-semibold text-[#002e5b] mb-3">Western Hinterland</h4>
+                            <ul class="text-sm text-[#333333] space-y-1">
+                                <li>• Bannockburn</li>
+                                <li>• Inverleigh</li>
+                                <li>• Shelford</li>
+                                <li>• Teesdale</li>
+                            </ul>
+                        </div>
+                        <div class="bg-[#f6f6f8] rounded-lg p-6">
+                            <h4 class="font-semibold text-[#002e5b] mb-3">Southern Region</h4>
+                            <ul class="text-sm text-[#333333] space-y-1">
+                                <li>• Colac</li>
+                                <li>• Birregurra</li>
+                                <li>• Forrest</li>
+                                <li>• Beech Forest</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="bg-[#e1ecf8] rounded-lg p-6 mb-6">
+                        <h4 class="font-semibold text-[#002e5b] mb-3">Rural Specialties</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-tractor text-[#f58220]"></i>
+                                <span class="text-[#333333]">Agricultural building door solutions</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-warehouse text-[#f58220]"></i>
+                                <span class="text-[#333333]">Large format and industrial doors</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <i class="fas fa-road text-[#f58220]"></i>
+                                <span class="text-[#333333]">Extended travel service calls</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="px-6 py-3 bg-[#f58220] text-white font-semibold rounded hover:bg-orange-600 transition-colors">
+                        Book Rural Service
+                    </button>
+                </div>
+
+                <div>
+                    <img class="w-full h-80 object-cover rounded-lg mb-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8fb8a2a988-9211711eec12d4cda342.png" alt="Large agricultural garage door installation on rural property in Colac hinterland">
+                    <div class="bg-[#f6f6f8] rounded-lg p-6">
+                        <h4 class="font-semibold text-[#002e5b] mb-4">Why Choose Us for Rural Properties?</h4>
+                        <div class="space-y-3">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-clock text-[#f58220] mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-[#333333]">Flexible Scheduling</h5>
+                                    <p class="text-sm text-[#333333]">We work around farming schedules and seasonal demands</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-truck text-[#f58220] mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-[#333333]">Mobile Service Units</h5>
+                                    <p class="text-sm text-[#333333]">Fully equipped vehicles for on-site repairs and installations</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-handshake text-[#f58220] mt-1"></i>
+                                <div>
+                                    <h5 class="font-medium text-[#333333]">Local Understanding</h5>
+                                    <p class="text-sm text-[#333333]">Deep knowledge of rural requirements and challenges</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Testimonials -->
+    <section id="testimonials" class="w-full py-16 px-20 bg-[#002e5b]">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-montserrat font-bold text-white mb-12">What Our Local Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-8">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="flex text-[#f58220]">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-[#333333] mb-4 italic">"Outstanding service from start to finish. They understood our coastal requirements and delivered a solution that's been perfect for our Torquay property."</p>
+                    <div class="border-t pt-4">
+                        <h4 class="font-semibold text-[#002e5b]">Sarah Mitchell</h4>
+                        <p class="text-sm text-[#333333]">Torquay Homeowner</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-8">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="flex text-[#f58220]">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-[#333333] mb-4 italic">"Excellent emergency response when our commercial door failed. Had us back in business within hours. Highly recommend for Geelong businesses."</p>
+                    <div class="border-t pt-4">
+                        <h4 class="font-semibold text-[#002e5b]">David Chen</h4>
+                        <p class="text-sm text-[#333333]">Geelong Business Owner</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg p-8">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="flex text-[#f58220]">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-[#333333] mb-4 italic">"Professional installation of our farm shed doors. They made the trip out to Colac and delivered exactly what we needed for our rural operation."</p>
+                    <div class="border-t pt-4">
+                        <h4 class="font-semibold text-[#002e5b]">Mark Thompson</h4>
+                        <p class="text-sm text-[#333333]">Colac Rural Property</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Booking CTA -->
+    <section id="booking-cta" class="w-full py-16 px-20 bg-[#f58220]">
+        <div class="max-w-4xl mx-auto text-center text-white">
+            <h2 class="text-4xl font-montserrat font-bold mb-6">Ready to Book Your Service?</h2>
+            <p class="text-xl mb-8">Get professional garage door services across Geelong and surrounding areas. Same-day emergency response available.</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="px-8 py-4 bg-white text-[#f58220] font-semibold rounded hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-phone mr-2"></i>
+                    Call Now: 1300 GGD DOOR
+                </button>
+                <button class="px-8 py-4 border-2 border-white text-white font-semibold rounded hover:bg-white hover:text-[#f58220] transition-colors">
+                    Book Online Service
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="w-full px-20 py-12 bg-[#002e5b]">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-lg font-montserrat font-semibold text-[#e1ecf8] mb-4">Service Areas</h4>
+                    <div class="space-y-2">
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Greater Geelong</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Surf Coast</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Rural Hinterland</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-montserrat font-semibold text-[#e1ecf8] mb-4">Services</h4>
+                    <div class="space-y-2">
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Emergency Repairs</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">New Installations</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Maintenance Programs</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Smart Automation</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-montserrat font-semibold text-[#e1ecf8] mb-4">Company</h4>
+                    <div class="space-y-2">
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">About Us</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Trade Portal</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Warranty</span>
+                        <span class="block text-[#e1ecf8] text-base hover:text-white transition-colors cursor-pointer">Contact</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-montserrat font-semibold text-[#e1ecf8] mb-4">Contact</h4>
+                    <div class="space-y-2 text-[#e1ecf8]">
+                        <p class="text-base">1300 GGD DOORS</p>
+                        <p class="text-base">info@geelonggaragedoors.com.au</p>
+                        <p class="text-base">Geelong, Victoria</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-600 pt-8 mt-8 text-center">
+                <p class="text-[#e1ecf8] text-base">© 2024 Geelong Garage Doors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>

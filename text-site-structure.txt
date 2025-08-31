@@ -1,0 +1,204 @@
+GEELONG GARAGE DOORS - B2B WEBSITE STRUCTURE
+==============================================
+
+HOME PAGE
+├── Primary Keyword: commercial garage door installation Geelong
+├── H1: Commercial Garage Door Installation & Services - Geelong
+└── Target: B2B clients, insurance, builders, architects, property managers
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                            MAIN NAVIGATION                          │
+└─────────────────────────────────────────────────────────────────────┘
+
+1. SERVICES HUB (/services/)
+   │
+   ├── 1.1 COMMERCIAL INSTALLATION (/commercial-garage-door-installation-geelong/)
+   │   │   Primary: commercial garage door installation Geelong
+   │   │   Secondary: sectional garage doors commercial Geelong
+   │   │
+   │   ├── 1.1.1 Sectional Doors (/sectional-garage-doors-commercial-geelong/)
+   │   ├── 1.1.2 Roller Doors (/commercial-roller-door-installation-geelong/)
+   │   └── 1.1.3 Overhead Doors (/commercial-overhead-doors-geelong/)
+   │
+   ├── 1.2 INDUSTRIAL SERVICES (/industrial-garage-door-services-geelong/)
+   │   │   Primary: industrial garage door services Geelong
+   │   │   Secondary: warehouse garage door solutions Geelong
+   │   │
+   │   ├── 1.2.1 Heavy Duty Systems (/heavy-duty-garage-doors-geelong/)
+   │   │   Keywords: heavy duty garage doors Geelong, industrial strength garage doors Geelong
+   │   ├── 1.2.2 Automated Systems (/automated-garage-door-systems-geelong/)
+   │   │   Keywords: automated garage door systems Geelong, smart garage door solutions commercial Geelong
+   │   └── 1.2.3 Factory Solutions (/factory-garage-door-installation-geelong/)
+   │
+   ├── 1.3 INSURANCE CLAIMS (/insurance-garage-door-claims-geelong/)
+   │   │   Primary: insurance garage door replacement Geelong
+   │   │   Secondary: garage door insurance claims Geelong
+   │   │
+   │   ├── 1.3.1 Storm Damage (/storm-damage-garage-door-repair-geelong/)
+   │   ├── 1.3.2 Claims Processing (/garage-door-damage-assessment-geelong/)
+   │   └── 1.3.3 Emergency Insurance (/emergency-garage-door-insurance-repairs-geelong/)
+   │
+   ├── 1.4 EMERGENCY REPAIRS (/emergency-commercial-garage-door-repair-geelong/)
+   │   │   Primary: emergency commercial garage door repair Geelong
+   │   │   Secondary: 24/7 garage door services Geelong
+   │
+   └── 1.5 MAINTENANCE CONTRACTS (/commercial-garage-door-maintenance-geelong/)
+
+2. INDUSTRIES HUB (/industries/)
+   │
+   ├── 2.1 INSURANCE COMPANIES (/insurance-companies/)
+   │   │   Keywords: garage door insurance claims Geelong
+   │   │   Keywords: insurance approved garage door installer Geelong
+   │
+   ├── 2.2 BUILDERS & CONSTRUCTION (/builders-construction/)
+   │   │   Keywords: builder garage door installation Geelong
+   │   │   Keywords: construction garage door services Geelong
+   │   │
+   │   ├── 2.2.1 New Construction (/new-build-garage-door-installation-geelong/)
+   │   │   Keywords: new build garage door installation Geelong
+   │   │   Keywords: commercial construction garage doors Geelong
+   │   └── 2.2.2 Bulk Installation (/bulk-garage-door-installation-geelong/)
+   │       Keywords: bulk garage door installation Geelong
+   │       Keywords: construction project garage door supply Geelong
+   │
+   ├── 2.3 ARCHITECTS & DESIGNERS (/architects-designers/)
+   │   │   Keywords: architect specified garage doors Geelong
+   │   │   Keywords: custom commercial garage doors Geelong
+   │
+   ├── 2.4 GOVERNMENT & UTILITIES (/government-utilities/)
+   │   │   Keywords: government garage door contractor Geelong
+   │   │   Keywords: council garage door services Geelong
+   │
+   ├── 2.5 PROPERTY MANAGEMENT (/property-management/)
+   │   │   Keywords: property management garage door services Geelong
+   │   │   Keywords: commercial property garage doors Geelong
+   │   │
+   │   ├── 2.5.1 Rental Properties (/rental-property-garage-door-repairs-geelong/)
+   │   │   Keywords: rental property garage door repairs Geelong
+   │   │   Keywords: investment property garage door services Geelong
+   │   └── 2.5.2 Commercial Buildings (/commercial-building-garage-doors-geelong/)
+   │       Keywords: commercial building garage doors Geelong
+   │       Keywords: office building garage doors Geelong
+   │
+   ├── 2.6 BODY CORPORATE (/body-corporate/)
+   │   │   Keywords: body corporate garage door services Geelong
+   │   │   Keywords: strata garage door maintenance Geelong
+   │   │
+   │   ├── 2.6.1 Apartment Complex (/apartment-complex-garage-doors-geelong/)
+   │   │   Keywords: apartment complex garage doors Geelong
+   │   │   Keywords: unit development garage door installation Geelong
+   │   └── 2.6.2 Multi-Unit Solutions (/multi-unit-garage-door-solutions-geelong/)
+   │       Keywords: multi-unit garage door solutions Geelong
+   │       Keywords: residential complex garage door repairs Geelong
+   │
+   ├── 2.7 HOTELS & HOSPITALITY (/hotels-hospitality/)
+   │   │   Keywords: hotel garage door installation Geelong
+   │   │   Keywords: hospitality garage door solutions Geelong
+   │
+   └── 2.8 MULTI-STORY DEVELOPMENT (/multi-story-development/)
+       │   Keywords: multi-story garage door installation Geelong
+       │   Keywords: apartment building garage doors Geelong
+
+3. LOCATIONS HUB (/locations/)
+   │
+   ├── 3.1 BELLARINE PENINSULA (/bellarine-peninsula/)
+   │   │   Keywords: Bellarine Peninsula garage door services
+   │   │   Areas: Portarlington, Ocean Grove, Point Lonsdale, Queenscliff
+   │
+   ├── 3.2 SURF COAST (/surf-coast/)
+   │   │   Keywords: Surf Coast garage door installation
+   │   │   Areas: Torquay, Anglesea, Lorne, Apollo Bay
+   │
+   ├── 3.3 GREATER GEELONG (/greater-geelong/)
+   │   │   Keywords: Greater Geelong garage door contractors
+   │   │   Areas: Newtown, Belmont, Highton, Grovedale
+   │
+   ├── 3.4 COLAC REGION (/colac/)
+   │   │   Keywords: Colac garage door business services
+   │
+   └── 3.5 MELBOURNE WESTERN (/melbourne-western-suburbs/)
+       │   Keywords: Melbourne Western suburbs garage doors
+       │   Areas: Werribee, Hoppers Crossing, Point Cook
+
+4. PROJECTS (/projects/)
+   ├── Case Studies
+   ├── Portfolio Gallery
+   └── Client Testimonials
+
+5. ABOUT (/about/)
+   ├── Company Credentials
+   ├── Certifications
+   └── Team
+
+6. CONTACT (/contact/)
+   ├── Quote Request
+   ├── Emergency Service
+   └── Consultation Booking
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                          SPECIALTY SECTIONS                        │
+└─────────────────────────────────────────────────────────────────────┘
+
+SPECIALTY SOLUTIONS HUB (/specialty/)
+│
+├── Fire-Rated Doors (/fire-rated-garage-doors-geelong/)
+├── Insulated Systems (/insulated-commercial-garage-doors-geelong/)
+├── Security Solutions (/security-garage-doors-commercial-geelong/)
+└── High-Cycle Doors (/high-cycle-garage-doors-geelong/)
+
+RESOURCES HUB (/resources/)
+│
+├── Compliance Guide (/australian-standards-garage-doors-geelong/)
+│   Keywords: Australian standards garage doors Geelong
+│   Keywords: AS 4505 garage door installation Geelong
+├── Safety Information (/safety-compliant-garage-doors-geelong/)
+│   Keywords: safety compliant garage doors Geelong
+│   Keywords: building code garage doors Geelong
+└── Technology Guide (/smart-garage-door-technology/)
+    Keywords: IoT garage door solutions Geelong
+    Keywords: app-controlled garage doors Geelong
+
+CONVERSION PATHS (/conversion/)
+│
+├── Get Quote (/get-quote/)
+│   Keywords: get quote garage door installation Geelong
+├── Site Assessment (/site-assessment/)
+│   Keywords: garage door site assessment Geelong
+│   Keywords: commercial garage door inspection Geelong
+├── Consultation (/consultation/)
+│   Keywords: garage door consultation commercial Geelong
+└── Project Management (/project-management/)
+    Keywords: garage door project management Geelong
+
+┌─────────────────────────────────────────────────────────────────────┐
+│                         SEO OPTIMIZATION NOTES                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+INTERNAL LINKING STRATEGY:
+├── Homepage links to all main hubs
+├── Service pages link to relevant industry pages
+├── Industry pages link to relevant service pages
+├── Location pages link to services available in that area
+└── All pages link to conversion pages (quote, contact, emergency)
+
+URL STRUCTURE BENEFITS:
+├── Keywords in URL paths for SEO
+├── Logical hierarchy for crawlers
+├── User-friendly navigation structure
+├── Clear content categorization
+└── Easy to expand with new services/locations
+
+KEYWORD DISTRIBUTION:
+├── Primary keywords: 1 per page in H1 and title
+├── Secondary keywords: 2-3 per page in H2/H3
+├── Long-tail keywords: Natural integration in content
+└── Location keywords: Combined with service keywords
+
+CONTENT HIERARCHY:
+├── Hub pages: Broad keyword targeting
+├── Service pages: Specific service keywords
+├── Industry pages: Industry + service combinations
+├── Location pages: Geographic + service keywords
+└── Conversion pages: Action-oriented keywords
+
+This structure ensures every page targets specific B2B keywords while maintaining logical navigation and strong internal linking for SEO authority distribution.

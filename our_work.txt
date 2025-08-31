@@ -1,0 +1,540 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+    <script>tailwind.config = {
+  "theme": {
+    "extend": {
+      "colors": {
+        "deep-blue": "#2C3993",
+        "vibrant-orange": "#F88229",
+        "charcoal": "#333333",
+        "heritage-red": "#901C3B"
+      },
+      "fontFamily": {
+        "sans": [
+          "Montserrat",
+          "sans-serif"
+        ]
+      }
+    }
+  }
+};</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700;800;900&amp;display=swap"><style>
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  </style></head>
+<body class="bg-[#F9F9F9]">
+    <!-- Header Section -->
+    <header id="header" class="w-full bg-[#2C3993] px-20 py-4">
+        <div class="max-w-[1440px] mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="text-white text-2xl font-bold">
+                    <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-8">
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Solutions For Professionals</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Products</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Technical Resources</span>
+                <span class="text-[#F88229] hover:text-orange-300 font-medium transition-colors cursor-pointer">Our Work</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">About Us</span>
+                <span class="text-white hover:text-[#e1ecf8] transition-colors cursor-pointer">Contact Us</span>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <span class="text-white font-medium">1300 GGD DOORS</span>
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                    Trade Portal Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <section id="breadcrumb" class="bg-white py-4 border-b border-gray-200">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <nav class="flex items-center space-x-2 text-sm">
+                <span class="text-[#F88229] hover:text-orange-600 cursor-pointer">Home</span>
+                <span class="text-[#333333]">/</span>
+                <span class="text-[#333333] font-medium">Our Work</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Page Hero Section -->
+    <section id="page-hero" class="py-20 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h1 class="text-5xl font-bold text-[#2C3993] mb-6">Our Project Portfolio</h1>
+            <p class="text-xl text-[#333333]/80 max-w-3xl mx-auto leading-relaxed">
+                Showcasing our commitment to excellence through successful projects across residential, commercial, and industrial applications. Each project demonstrates our technical expertise, attention to detail, and dedication to delivering solutions that exceed expectations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Toolbar -->
+    <section id="filter-toolbar" class="py-8 bg-[#F9F9F9] border-t border-gray-200">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center space-x-4">
+                    <span class="text-[#333333] font-medium">Filter by:</span>
+                    <div class="flex items-center space-x-3">
+                        <select class="bg-white border border-gray-300 rounded px-4 py-2 text-[#333333] focus:outline-none focus:border-[#2C3993]">
+                            <option>All Industries</option>
+                            <option>Residential</option>
+                            <option>Commercial</option>
+                            <option>Industrial</option>
+                        </select>
+                        <select class="bg-white border border-gray-300 rounded px-4 py-2 text-[#333333] focus:outline-none focus:border-[#2C3993]">
+                            <option>All Product Types</option>
+                            <option>Architectural Doors</option>
+                            <option>Industrial Solutions</option>
+                            <option>Custom Manufacturing</option>
+                            <option>Smart Systems</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-[#333333]/70 text-sm">Showing 12 of 45 projects</span>
+                    <div class="flex items-center space-x-2">
+                        <button class="p-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-th-large text-[#333333]"></i>
+                        </button>
+                        <button class="p-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
+                            <i class="fas fa-list text-[#333333]"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Grid -->
+    <section id="project-grid" class="py-16 bg-white">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div id="project-1" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5aceb97141-bb5b81270f521feb5cef.png" alt="luxury residential garage door installation, modern home exterior, premium finish, architectural design">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-[#e1ecf8] text-[#2C3993] text-sm font-medium rounded-full">Residential</span>
+                            <span class="text-[#333333]/60 text-sm">March 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Luxury Residential Development</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Brighton, Melbourne
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Custom architectural doors for premium residential development featuring contemporary design and smart automation systems.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div id="project-2" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dde1771d61-15a2f70dfa0facc5ff13.png" alt="commercial building garage doors, modern office complex, professional installation, glass and steel">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Commercial</span>
+                            <span class="text-[#333333]/60 text-sm">February 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Corporate Headquarters</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Geelong CBD
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Large-scale commercial installation featuring high-security access systems and integrated building management.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div id="project-3" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4cf3a800b9-f16e9f51c1b522f88735.png" alt="industrial warehouse doors, heavy duty installation, manufacturing facility, large scale doors">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Industrial</span>
+                            <span class="text-[#333333]/60 text-sm">January 2024</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Manufacturing Facility Expansion</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Warrnambool
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Heavy-duty industrial doors designed for high-frequency operation with advanced safety features and weather sealing.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div id="project-4" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/02df449531-e878e0d780b815c3e54c.png" alt="modern townhouse development, residential garage doors, contemporary architecture, multiple units">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-[#e1ecf8] text-[#2C3993] text-sm font-medium rounded-full">Residential</span>
+                            <span class="text-[#333333]/60 text-sm">December 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Townhouse Development</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Torquay
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Standardized residential solutions for 24-unit townhouse development with consistent design and reliable operation.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div id="project-5" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8f847eda4b-c1cf75693bb3eb707f6e.png" alt="retail shopping center, commercial garage doors, modern retail architecture, glass facade">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Commercial</span>
+                            <span class="text-[#333333]/60 text-sm">November 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Retail Shopping Center</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Ballarat
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Multi-unit commercial installation with coordinated design elements and centralized access control systems.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div id="project-6" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/fbbd9fc491-32c76d004be98b990672.png" alt="custom architectural garage door, unique design, premium materials, artistic elements">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full">Custom</span>
+                            <span class="text-[#333333]/60 text-sm">October 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Bespoke Architectural Statement</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Lorne
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            One-of-a-kind custom design featuring artistic elements and premium materials for prestigious coastal residence.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div id="project-7" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/46fb74fbee-d1364a14a15d6233b293.png" alt="apartment complex garage doors, multi-story residential, modern urban architecture, multiple entrances">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-[#e1ecf8] text-[#2C3993] text-sm font-medium rounded-full">Residential</span>
+                            <span class="text-[#333333]/60 text-sm">September 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">High-Rise Apartment Complex</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Melbourne CBD
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Large-scale residential project featuring automated parking solutions and integrated security systems.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div id="project-8" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bc89cc670c-7298e735a7019b35d0ec.png" alt="logistics warehouse, industrial doors, distribution center, loading dock doors">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Industrial</span>
+                            <span class="text-[#333333]/60 text-sm">August 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Logistics Distribution Center</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Avalon
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            High-performance loading dock doors designed for continuous operation with advanced insulation properties.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div id="project-9" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0d05ea8e41-4b4d05629d65dcb7b266.png" alt="luxury home garage door, smart technology, premium residential, automated systems">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Smart Systems</span>
+                            <span class="text-[#333333]/60 text-sm">July 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Smart Home Integration</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Toorak, Melbourne
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Advanced home automation integration with voice control, smartphone connectivity, and AI-powered security features.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div id="project-10" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a601f13916-4b9a43062c651f45b875.png" alt="office building parking garage, commercial installation, modern corporate architecture, glass and steel">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Commercial</span>
+                            <span class="text-[#333333]/60 text-sm">June 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Corporate Office Complex</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Docklands, Melbourne
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Multi-level parking facility with integrated access control and energy-efficient operation systems.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div id="project-11" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1166218837-a9227bff5ee3bf33bb60.png" alt="heritage home restoration, traditional garage door, classic architecture, period appropriate design">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">Heritage</span>
+                            <span class="text-[#333333]/60 text-sm">May 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Heritage Home Restoration</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Williamstown
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Period-appropriate design respecting heritage requirements while incorporating modern functionality and security.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div id="project-12" class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden group hover:shadow-lg transition-shadow">
+                    <div class="overflow-hidden">
+                        <img class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1b3a604138-b8d000b9e2207b107c75.png" alt="automotive service center, industrial garage doors, commercial workshop, professional installation">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-3">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">Industrial</span>
+                            <span class="text-[#333333]/60 text-sm">April 2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-[#333333] mb-2">Automotive Service Center</h3>
+                        <p class="text-[#333333]/70 text-sm mb-3">
+                            <i class="fas fa-map-marker-alt text-[#F88229] mr-1"></i>
+                            Colac
+                        </p>
+                        <p class="text-[#333333]/80 mb-4 text-sm leading-relaxed">
+                            Specialized service bay doors with enhanced ventilation systems and rapid operation for improved workflow efficiency.
+                        </p>
+                        <button class="w-full bg-[#F88229] hover:bg-orange-600 text-white px-6 py-3 rounded font-medium transition-colors">
+                            View Project
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Section -->
+            <div id="load-more" class="text-center mt-16">
+                <button class="border-2 border-[#2C3993] text-[#2C3993] hover:bg-[#2C3993] hover:text-white px-8 py-3 rounded-lg font-medium transition-all">
+                    Load More Projects
+                </button>
+                <p class="text-[#333333]/60 text-sm mt-4">Showing 12 of 45 projects</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="py-16 bg-[#F9F9F9]">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div id="stat-1" class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="text-4xl font-bold text-[#2C3993] mb-2">250+</div>
+                    <div class="text-[#333333] font-medium">Projects Completed</div>
+                </div>
+                <div id="stat-2" class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="text-4xl font-bold text-[#F88229] mb-2">15+</div>
+                    <div class="text-[#333333] font-medium">Years Experience</div>
+                </div>
+                <div id="stat-3" class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="text-4xl font-bold text-[#2C3993] mb-2">98%</div>
+                    <div class="text-[#333333] font-medium">Client Satisfaction</div>
+                </div>
+                <div id="stat-4" class="bg-white rounded-lg p-8 shadow-sm">
+                    <div class="text-4xl font-bold text-[#F88229] mb-2">24/7</div>
+                    <div class="text-[#333333] font-medium">Support Available</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call-to-Action Section -->
+    <section id="cta-section" class="py-20 bg-[#2C3993]">
+        <div class="max-w-[1440px] mx-auto px-20 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl text-[#e1ecf8] mb-8 max-w-2xl mx-auto">
+                Let's discuss how we can bring your vision to life with our expertise and commitment to excellence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-[#F88229] hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
+                    Request a Quote
+                </button>
+                <button class="border-2 border-white text-white hover:bg-white hover:text-[#2C3993] px-8 py-4 rounded-lg font-semibold text-lg transition-all">
+                    Contact Our Team
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer" class="bg-[#2C3993] py-16">
+        <div class="max-w-[1440px] mx-auto px-20">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="text-white text-2xl font-bold mb-4">
+                        <span class="text-[#901C3B]">Geelong</span> Garage Doors
+                    </div>
+                    <p class="text-[#e1ecf8] leading-relaxed">
+                        Premium garage door solutions engineered for trade excellence. Serving Victoria's construction industry with quality, reliability, and innovation.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">About Us</span></li>
+                        <li><span class="text-[#F88229] hover:text-orange-300 transition-colors cursor-pointer">Our Work</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Products</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Technical Resources</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Contact Us</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Service Areas</h4>
+                    <ul class="space-y-2">
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Geelong</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Melbourne</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Warrnambool</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Ballarat</span></li>
+                        <li><span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Surf Coast</span></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white text-lg font-semibold mb-4">Contact Information</h4>
+                    <div class="space-y-3 text-[#e1ecf8]">
+                        <p>123 Industrial Drive<br>Geelong VIC 3220</p>
+                        <p><strong class="text-white">Phone:</strong><br>1300 GGD DOORS</p>
+                        <p><strong class="text-white">Email:</strong><br>info@geelonggaragedoors.com.au</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-[#e1ecf8]/20 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-[#e1ecf8] text-center md:text-left">
+                    © 2024 Geelong Garage Doors. All rights reserved.
+                </p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
+                    <span class="text-[#e1ecf8] hover:text-white transition-colors cursor-pointer">Terms of Service</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body></html>
