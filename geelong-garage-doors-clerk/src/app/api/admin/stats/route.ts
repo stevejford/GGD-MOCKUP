@@ -3,6 +3,7 @@ import { NextRequest } from 'next/server'
 import { isAdmin } from '@/lib/admin-guard'
 import { listBrands, listBrandFiles } from '@/lib/crawl-reader'
 import { broadcastToClients } from '@/app/api/ws/route'
+import { Client } from 'pg'
 import fs from 'fs'
 import path from 'path'
 
@@ -16,10 +17,47 @@ export async function GET(req: NextRequest) {
     
     // Get all brands
     const brands = await listBrands()
-    
+
     let totalPages = 0
     let totalAssets = 0
+    let totalEmbeddings = 0
     const brandStats = []
+
+    // Get database connection for embeddings
+    const conn = process.env.CRAWLER_DATABASE_URL || process.env.DATABASE_URL
+    let brandEmbeddings = new Map()
+
+    if (conn) {
+      try {
+        console.log('🔌 Connecting to Neon database for embedding stats...')
+        const client = new Client({ connectionString: conn })
+        await client.connect()
+
+        // Get embeddings per brand
+        const brandEmbeddingsResult = await client.query(`
+          SELECT brand, COUNT(*) as embedding_count
+          FROM crawl_embeddings_vec
+          GROUP BY brand
+        `)
+
+        console.log('📊 Brand embeddings found:', brandEmbeddingsResult.rows.length, 'brands')
+
+        brandEmbeddingsResult.rows.forEach(row => {
+          brandEmbeddings.set(row.brand, parseInt(row.embedding_count))
+        })
+
+        // Get total embeddings
+        const totalEmbeddingsResult = await client.query('SELECT COUNT(*) as count FROM crawl_embeddings_vec')
+        totalEmbeddings = parseInt(totalEmbeddingsResult.rows[0]?.count || '0')
+
+        console.log('✅ Total embeddings found:', totalEmbeddings)
+
+        await client.end()
+      } catch (error) {
+        console.error('❌ Failed to fetch embedding stats:', error)
+        // Continue without embeddings data
+      }
+    }
 
     for (const brand of brands) {
       try {
@@ -43,11 +81,14 @@ export async function GET(req: NextRequest) {
           lastCrawled = stats.mtime.toISOString()
         }
 
+        const embeddingCount = brandEmbeddings.get(brand) || 0
+        console.log(`📈 Brand ${brand}: ${pages} pages, ${assets} assets, ${embeddingCount} embeddings`)
+
         brandStats.push({
           brand,
           pages,
           assets,
-          embeddings: 0, // TODO: Get from vector DB when implemented
+          embeddings: embeddingCount, // Real embedding count from database
           lastCrawled
         })
 
@@ -87,10 +128,18 @@ export async function GET(req: NextRequest) {
       totalPages,
       totalBrands: brands.length,
       totalAssets,
-      totalEmbeddings: 0, // TODO: Get from vector DB
+      totalEmbeddings, // Real total from database
       brandStats,
       recentActivity
     }
+
+    console.log('📊 Final admin stats:', {
+      totalPages,
+      totalBrands: brands.length,
+      totalAssets,
+      totalEmbeddings,
+      brandsWithEmbeddings: brandStats.filter(b => b.embeddings > 0).length
+    })
 
     // Broadcast admin stats to WebSocket clients
     broadcastToClients({

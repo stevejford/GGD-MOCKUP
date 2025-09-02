@@ -8,8 +8,12 @@ import AdminEmbedPanel from './AdminEmbedPanel'
 import AdminAggregatePanel from './AdminAggregatePanel'
 import FileBrowserTab from './FileBrowserTab'
 import LogfireDashboard from '@/components/LogfireDashboard'
+import ContentRecreatorPanel from './ContentRecreatorPanel'
+import AIBlogGenerator from './AIBlogGenerator'
+import PageRecreationPanel from './PageRecreationPanel'
+import ContentApprovalPanel from './ContentApprovalPanel'
 
-type TabId = 'dashboard' | 'crawler' | 'search' | 'files' | 'tools' | 'logfire'
+type TabId = 'dashboard' | 'crawler' | 'search' | 'files' | 'tools' | 'recreator' | 'page-recreation' | 'ai-blog' | 'content-approval' | 'logfire'
 
 interface Tab {
   id: TabId
@@ -48,6 +52,30 @@ const tabs: Tab[] = [
     label: 'Tools',
     icon: '🛠️',
     description: 'Embeddings and data processing'
+  },
+  {
+    id: 'recreator',
+    label: 'Content Recreator',
+    icon: '🎨',
+    description: 'Recreate competitor pages with reworded content'
+  },
+  {
+    id: 'page-recreation',
+    label: 'Page Recreation Engine',
+    icon: '🏭',
+    description: 'AI-powered page recreation with brand integration and CMS'
+  },
+  {
+    id: 'ai-blog',
+    label: 'AI Blog Generator',
+    icon: '🤖',
+    description: 'Generate intelligent blog posts using OpenAI and embeddings'
+  },
+  {
+    id: 'content-approval',
+    label: 'Content Approval',
+    icon: '✅',
+    description: 'Review and approve AI-generated content before publishing'
   },
   {
     id: 'logfire',
@@ -144,6 +172,18 @@ export default function AdminTabs({
             </div>
           </div>
         )
+
+      case 'recreator':
+        return <ContentRecreatorPanel />
+
+      case 'page-recreation':
+        return <PageRecreationPanel />
+
+      case 'ai-blog':
+        return <AIBlogGenerator />
+
+      case 'content-approval':
+        return <ContentApprovalPanel />
 
       case 'logfire':
         return (
